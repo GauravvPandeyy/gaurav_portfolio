@@ -93,7 +93,6 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   color: transparent;
 }
 
@@ -614,11 +613,11 @@ section {
   .experience-content {
     width: calc(50% - 2rem);
   }
-  
+
   .experience-item:nth-child(odd) .experience-content {
     padding-right: 2rem;
   }
-  
+
   .experience-item:nth-child(even) .experience-content {
     padding-left: 2rem;
   }
@@ -1156,7 +1155,7 @@ section {
   box-shadow: 0 10px 25px hsl(var(--foreground) / 0.15);
   z-index: 100;
   max-width: 400px;
-  animation: slideIn 0.3s ease-out;
+  transition: all 0.3s ease;
 }
 
 .toast-content {
@@ -1198,101 +1197,21 @@ section {
   background-color: hsl(var(--muted));
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 /* Animations */
 @keyframes fadeIn {
-  from { 
-    opacity: 0; 
-    transform: translateY(30px); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideUp {
-  from { 
-    opacity: 0; 
-    transform: translateY(50px); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: hsl(var(--primary)); }
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out;
-}
-
-/* Responsive Design */
+/* Responsive Overrides */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
-  
-  section {
-    padding: 3rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .timeline-line,
-  .timeline-dot {
-    display: none;
-  }
-  
-  .experience-item {
-    flex-direction: column;
-  }
-  
-  .experience-content {
-    width: 100%;
-    padding: 0;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .toast {
-    top: 1rem;
-    right: 1rem;
-    left: 1rem;
-    max-width: none;
-  }
+  section { padding: 3rem 0; }
+  .timeline-line, .timeline-dot { display: none; }
+  .experience-item { flex-direction: column; }
+  .experience-content { width: 100%; padding: 0; }
 }
