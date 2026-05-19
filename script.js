@@ -21,7 +21,7 @@ const skillCategories = [
     title: "Visualization & Models",
     icon: "fas fa-chart-bar",
     color: "accent",
-    skills: ["Power BI", "SSRS", "DAX Measures", "Data Modelling", "SCD", "Common Data Modelling"] //
+    skills: ["Power BI", "SSRS", "DAX Measures", "Data Modelling", "Star Schema", "SCD", "Common Data Modelling"] //
   },
   {
     title: "Orchestration & AI",
