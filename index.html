@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurav Pandey - Data Engineer</title>
+    <meta
+      name="description"
+      content="Full Stack Developer with expertise in Go, React, Spring Boot, and Node.js. Recent MCA graduate passionate about creating robust, scalable solutions."
+    />
+    <meta
+      property="og:title"
+      content="Ayushmaan Pandey - Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full Stack Developer with expertise in Go, React, Spring Boot, and Node.js"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">AP</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+
+          <!-- Dark Mode Toggle -->
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="mobile-menu-btn">
+          <button id="mobile-toggle" class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <div class="mobile-nav-links">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#skills" class="mobile-nav-link">Skills</a>
+          <a href="#experience" class="mobile-nav-link">Experience</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+          <div class="mobile-theme-toggle">
+            <button id="mobile-theme-toggle" class="theme-toggle">
+              <i class="fas fa-moon"></i>
+              <span>Dark Mode</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <!-- Profile Image -->
+          <div class="profile-image-container">
+            <div class="profile-gradient-ring">
+              <img
+                src="assets/profile-photo.jpg"
+                alt="Ayushmaan Pandey"
+                class="profile-image"
+              />
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="gradient-text">Ayushmaan Pandey</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span id="typing-text" class="typing-text"></span>
+          </div>
+
+          <p class="hero-description">
+            Software Engineer with a passion for the architectural side of
+            development. I focus on building and deploying robust, full-stack
+            solutions with a heavy emphasis on system reliability and proactive
+            monitoring. I am fascinated by the evolution of software patterns
+            and constantly seek to understand the logic behind how modern
+            engineering challenges are solved. My focus is on contributing
+            clean, extensible code to projects that demand both technical
+            precision and a commitment to operational excellence.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-code"></i>
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Passionate about creating innovative web solutions
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Profile Summary</h3>
+            <p>
+              I am a Software Engineer focused on the entire lifecycle of a
+              digital product, from building intuitive interfaces to
+              architecting high-concurrency backends. My passion lies in
+              deconstructing how complex engineering problems are solved at
+              scale, which has driven me to master a deep technical stack
+              including Microservices, gRPC, and real-time communication via
+              WebSockets and WebRTC. I treat deployment and reliability as core
+              parts of the development process, utilizing Docker and Kubernetes
+              for orchestration, alongside Prometheus and Grafana to ensure
+              system observability. I am constantly learning and refining my
+              craft to contribute robust, well-monitored solutions to real-world
+              projects.
+            </p>
+
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hyderabad, Telangana</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>ayushmaan1122pandey@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 8639619547</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>MCA from Pondicherry University (GPA: 7.75)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stats-card">
+              <h3>Quick Stats</h3>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number primary">3+</div>
+                  <div class="stat-label">Years Learning</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number secondary">10+</div>
+                  <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number accent">7+</div>
+                  <div class="stat-label">Major Projects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number primary">2</div>
+                  <div class="stat-label">Companies</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">My professional journey</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <div id="experience-timeline">
+            <!-- Experience items will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+        </div>
+
+        <!-- Project Filter -->
+        <div class="project-filters" id="project-filters">
+          <!-- Filters will be populated by JavaScript -->
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's discuss your next project</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon primary">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value">ayushmaan1122pandey@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon secondary">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <p class="contact-label">Phone</p>
+                  <p class="contact-value">+91 8639619547</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon accent">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <p class="contact-label">Location</p>
+                  <p class="contact-value">Hyderabad, Telangana</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>Connect with me</h4>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/AyushmaanPandey11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon primary"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="mailto:ayushmaan1122pandey@gmail.com"
+                  class="social-icon secondary"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918639619547" class="social-icon accent">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="resume-download">
+              <button id="download-resume" class="btn btn-primary">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <h3>Send Message</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span id="submit-text">Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Ayushmaan Pandey. All rights reserved.</p>
+          <p class="footer-tagline">
+            Built with passion using modern web technologies
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+      <div class="toast-content">
+        <div class="toast-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-message">
+          <div class="toast-title">Success!</div>
+          <div class="toast-description">Message sent successfully!</div>
+        </div>
+        <button id="toast-close" class="toast-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
